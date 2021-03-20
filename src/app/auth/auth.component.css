@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Zurich BT';
+  }
+  
+  body {
+    height: 100vh;
+    width: 100%;
+  }
+  
+  .loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+   }
+  
+  
+  .my-container {
+    height: 100vh;
+    width: 100%;
+    /* background-image: url('../../assets/Images/OJP-BG.png'); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .main-container {
+    width: 50%;
+  }
+  
+  .grid-conatiner {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    height:400px;
+  }
+  
+  .logo {
+    /* background-image: url('../../assets/Images/login-side-bg.png'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+    border: 1px solid #26cdff;
+  }
+  
+    /*.logo div{
+    width: 100%;
+    background-image: url('https://logos-download.com/wp-content/uploads/2016/10/icici_bank_logo_symbol.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }*/
+  
+    .logo img {
+        width: 200px;
+        max-width:90%;
+        display: block;
+        position: relative;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        padding: 10px;
+    }
+  
+  .login-container {
+    background-color: white;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border: 1px solid #26cdff;
+    display:flex;
+    align-items:center;
+  }
+  
+    .login-container h2 {
+        font-size: 1.2rem;
+        padding: 20px;
+        text-align: center;
+        font-weight: bold;
+    }
+  
+    .login-container > div {
+        width: 100%;
+        display: table;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 5% 10%;
+    }
+  
+  .row-bottom {
+    border-bottom: 1px solid #e6e6e6;
+    padding-bottom: 5px;
+    margin-top: 10px;
+  }
+  
+  
+  .txtBox {
+    border: none;
+    background: white;
+    box-shadow: none;
+    color: #616061;
+    margin-left: -1px;
+    padding-left: 3px;
+  }
+  
+  
+  .txtBox:focus {
+  outline: none;
+  }
+  
+  
+  .sign-in-btn {
+    margin-top: 10px;
+    color: #fff;
+    padding: 4px 15px;
+    border: 2px solid #fff;
+    border-radius: 6px;
+    background: #cbc9c8;
+    background: -webkit-linear-gradient(#f6892e, #a40a14);
+    background: -o-linear-gradient(#f6892e, #a40a14);
+    background: -moz-linear-gradient(#f6892e, #a40a14);
+    background: linear-gradient(#0288e2, #12a9d6);
+    background: #26cdff;
+    padding: 6px 33px;
+    border-radius: 22px;
+    font-size: 15px;
+  }
+  
+  .sign-in-btn:focus{
+    outline: none;
+  }
+  
+  
+  .loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+   }
+  
+  @media(max-width:950px)
+  {
+    .main-container {
+        width: 60%;
+    }
+  }
+  
+  @media(max-width:765px) {
+    .main-container {
+        width: 90%;
+        height: 80%;
+        border: 0px solid #26cdff;
+        border-radius: 25px;
+        background-color: white;
+    }
+  
+    .logo {
+        border: 0px solid #26cdff;
+        border-radius: 0px;
+        background-image: none;
+        background-color: white;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+    }
+  
+  
+        .logo div {
+            margin-top: 10px;
+            height: 50%;
+        }
+  
+    .login-container {
+        border: 0px solid #26cdff;
+        border-radius: 0px;
+    }
+     .login-container h2 {
+        font-size: 1.2rem;
+    }
+  
+  
+    .grid-conatiner {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 18% 82%;
+    }
+  }
+  
